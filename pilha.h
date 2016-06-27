@@ -10,7 +10,7 @@ class Pilha{
 	
 	private:
 		int Topo;
-		char Elementos[TAM];
+		int Elementos[TAM];
 	
 	public:
 		Pilha();

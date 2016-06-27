@@ -30,13 +30,15 @@ void Fila::Insere(int X, bool &OK){
 	if(Cheia() == true)
 		OK = false;
 	else
+	{
 		OK = true;
 		nElementos = nElementos + 1;
 		Elementos[ultimo] = X;
 		if(ultimo == TAM)
 			ultimo = 1;
 		else
-			ultimo = ultimo + 1;			
+			ultimo = ultimo + 1;
+	}
 			
 }
 
@@ -44,6 +46,7 @@ void Fila::Retira(int &X, bool &OK){
 	if(Vazia() == true)
 		OK = false;
 	else
+	{
 		OK = true;
 		nElementos = nElementos - 1;
 		X = Elementos[primeiro];
@@ -51,6 +54,7 @@ void Fila::Retira(int &X, bool &OK){
 			primeiro = 1;
 		else
 			primeiro = primeiro + 1;
+	}
 }
 
 void Fila::Imprime(){

@@ -9,7 +9,7 @@ class Fila{
 		int nElementos;
 		int primeiro;
 		int ultimo;
-		char Elementos[TAM];
+		int Elementos[TAM];
 		
 	public:
 		Fila();
