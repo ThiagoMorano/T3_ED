@@ -37,12 +37,10 @@ int main() {
 
 	while (window->isOpen()) {
 		sf::Event event;
-		window->clear(sf::Color::Black);
-		gR->draw2();
 		while (window->pollEvent(event)) {
 			if (event.type == sf::Event::Closed)
 				window->close();
-			else if (event.type == sf::Event::KeyPressed) {
+			else {
 				i = 0;
 				while (rodando && (turno < DIFICULDADE)) {
 					window->clear(sf::Color::Black);
@@ -104,6 +102,7 @@ int main() {
 							std::stringstream ss;
 							ss << turno;
 							text.setString("Nice! Nivel: ");
+							text.setPosition(0, 0);
 							text2.setString(ss.str());
 							text2.setPosition(250, 0);
 							window->draw(text);
