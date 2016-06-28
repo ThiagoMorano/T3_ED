@@ -5,3 +5,5 @@
 *.o
 *.layout
 *.dev
+*.cbp
+*.depend

@@ -3,15 +3,15 @@
 #define Pilha_H
 
 #include "fila.h"
- 
+
 #define TAM 100
 
 class Pilha{
-	
+
 	private:
 		int Topo;
 		int Elementos[TAM];
-	
+
 	public:
 		Pilha();
 		bool Vazia();

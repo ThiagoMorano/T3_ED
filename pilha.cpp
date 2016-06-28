@@ -50,7 +50,7 @@ bool Pilha::PilhasIguais(Fila &f2){
 	int x1, x2;
 	Pilha Aux1;
 	Fila Aux2;
-	
+
 	while(Vazia() == false && f2.Vazia() == false && Iguais == true){
 		Desempilha(x1, OK1);
 		f2.Retira(x2, OK2);
@@ -59,24 +59,24 @@ bool Pilha::PilhasIguais(Fila &f2){
 		if(OK2)
 			Aux2.Insere(x2, OK2);
 		if((OK1 == true && OK2 == false) || (OK1 == false && OK2 == true)){
-			Iguais == false;
+			Iguais = false;
 		}
 		if(OK1 == true && OK2 == true){
 			if(x1 != x2)
 				Iguais = false;
 		}
 	}
-	
+
 	while(Aux1.Vazia() == false){
 		Aux1.Desempilha(x1, OK1);
 		Empilha(x1, OK1);
 	}
-	
+
 	while(Aux2.Vazia() == false){
 		Aux2.Retira(x2, OK2);
 		f2.Insere(x2, OK2);
 	}
-	
+
 	if(Iguais == true)
 		return true;
 	else
@@ -87,7 +87,7 @@ void Pilha::Imprime(){
 	int X;
 	bool OK;
 	Pilha PAux;
-	
+
 	while(Vazia() == false){
 		Desempilha(X, OK);
 		if(OK)

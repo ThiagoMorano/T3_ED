@@ -8,7 +8,7 @@ using std::cout;
 Fila::Fila(){
 	primeiro = 1;
 	ultimo = 1;
-	nElementos = 0;	
+	nElementos = 0;
 }
 
 bool Fila::Vazia(){
@@ -16,7 +16,7 @@ bool Fila::Vazia(){
 		return true;
 	else
 		return false;
-	
+
 }
 
 bool Fila::Cheia(){
@@ -39,7 +39,7 @@ void Fila::Insere(int X, bool &OK){
 		else
 			ultimo = ultimo + 1;
 	}
-			
+
 }
 
 void Fila::Retira(int &X, bool &OK){
