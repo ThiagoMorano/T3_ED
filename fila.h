@@ -1,7 +1,7 @@
 #ifndef Fila_H
 #define Fila_H
 
-#define TAM 10
+#define TAM 100
 
 class Fila{
 	

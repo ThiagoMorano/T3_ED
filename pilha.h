@@ -4,7 +4,7 @@
 
 #include "fila.h"
  
-#define TAM 10
+#define TAM 100
 
 class Pilha{
 	

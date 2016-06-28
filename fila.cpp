@@ -1,7 +1,7 @@
 #include <iostream>
 #include "fila.h"
 
-#define TAM 10
+#define TAM 100
 
 using std::cout;
 
