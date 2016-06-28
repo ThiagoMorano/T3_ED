@@ -14,7 +14,7 @@ private:
 	sf::CircleShape* redCircle;
 	sf::CircleShape* blueCircle;
 	sf::RenderWindow* window;
-	sf::Text text3, text4, text5, text6;
+	sf::Text text3, text4, text5, text6, text7;
 
 public:
 	geniusRender(sf::RenderWindow* w) {
@@ -37,6 +37,9 @@ public:
 		text4.setFont(font); text4.setColor(sf::Color::Black); text4.setString("3"); text4.setPosition(430, 320);
 		text5.setFont(font); text5.setColor(sf::Color::Black); text5.setString("2"); text5.setPosition(330, 320);
 		text6.setFont(font); text6.setColor(sf::Color::Black); text6.setString("4"); text6.setPosition(530, 320);
+		text7.setFont(font); text7.setColor(sf::Color::Black); text7.setString("Really Mad Genius"); text7.setPosition(230, 100);
+		text7.setColor(sf::Color::White);
+
 
 	}
 
@@ -45,7 +48,7 @@ public:
 		window->draw(*magentaCircle);
 		window->draw(*redCircle);
 		window->draw(*blueCircle);
-		window->draw(text3); window->draw(text4); window->draw(text5); window->draw(text6);
+		window->draw(text3); window->draw(text4); window->draw(text5); window->draw(text6); window->draw(text7);
 		window->display();
 	}
 

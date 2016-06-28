@@ -17,7 +17,6 @@ int main() {
 	font.loadFromFile("ALGER.ttf");
 	text.setFont(font);
 	text2.setFont(font);
-	text7.setFont(font); text7.setColor(sf::Color::Black); text7.setString("Mad-Genius"); text7.setPosition(400, 300);
 	text2.setPosition(600, 600);
 	text2.setString("Level");
 	bool rodando = true;
