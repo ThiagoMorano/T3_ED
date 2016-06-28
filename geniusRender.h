@@ -52,36 +52,40 @@ public:
 	void blinkCircle(int cor) {
 		switch (cor) {
 		case 1:
+			//Sleep(100);
 			greenCircle->setFillColor(sf::Color::White);
 			this->draw();
-			Sleep(1000);
+			Sleep(500);
 			greenCircle->setFillColor(sf::Color::Green);
 			this->draw();
-			//Sleep(100);
+			//Sleep(1000);
 			break;
 		case 2:
+			//Sleep(100);
 			redCircle->setFillColor(sf::Color::White);
 			this->draw();
-			Sleep(1000);
+			Sleep(500);
 			redCircle->setFillColor(sf::Color::Red);
 			this->draw();
-			//Sleep(100);
+			//Sleep(1000);
 			break;
 		case 3:
+			//Sleep(100);
 			magentaCircle->setFillColor(sf::Color::White);
 			this->draw();
-			Sleep(1000);
+			Sleep(500);
 			magentaCircle->setFillColor(sf::Color::Magenta);
 			this->draw();
-			//Sleep(100);
+			//Sleep(1000);
 			break;
 		case 4:
+			//Sleep(100);
 			blueCircle->setFillColor(sf::Color::White);
 			this->draw();
-			Sleep(1000);
+			Sleep(500);
 			blueCircle->setFillColor(sf::Color::Blue);
 			this->draw();
-			//Sleep(100);
+			//Sleep(1000);
 			break;
 		default:
 			break;
@@ -91,28 +95,28 @@ public:
 	void blinkGreenCircle() {
 		greenCircle->setFillColor(sf::Color::White);
 		this->draw();
-		Sleep(1000);
+		Sleep(300);
 		greenCircle->setFillColor(sf::Color::Green);
 		this->draw();
 	}
 	void blinkRedCircle() {
 		redCircle->setFillColor(sf::Color::White);
 		this->draw();
-		Sleep(1000);
+		Sleep(300);
 		redCircle->setFillColor(sf::Color::Red);
 		this->draw();
 	}
 	void blinkMagentaCircle() {
 		magentaCircle->setFillColor(sf::Color::White);
 		this->draw();
-		Sleep(1000);
+		Sleep(300);
 		magentaCircle->setFillColor(sf::Color::Magenta);
 		this->draw();
 	}
 	void blinkBlueCircle() {
 		blueCircle->setFillColor(sf::Color::White);
 		this->draw();
-		Sleep(1000);
+		Sleep(300);
 		blueCircle->setFillColor(sf::Color::Blue);
 		this->draw();
 	}

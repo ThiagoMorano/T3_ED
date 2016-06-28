@@ -124,7 +124,7 @@ int main() {
 				}
 				if (turno < DIFICULDADE) {
 					/* Trying to clear the window and show a text */
-					window->clear(sf::Color::Black);
+					/*window->clear(sf::Color::Black);
 					text.setString("Checking Answer!");
 					window->draw(text);
 					window->display();
@@ -138,7 +138,7 @@ int main() {
 					if (p1.PilhasIguais(f1)) {
 						std::stringstream ss;
 						ss << turno;
-						text.setString("Nice Bro! Nivel: ");
+						text.setString("Nice! Nivel: ");
 						text2.setString(ss.str());
 						text2.setPosition(250, 0);
 						window->draw(text);
