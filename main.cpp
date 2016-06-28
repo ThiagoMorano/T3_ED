@@ -13,19 +13,15 @@ sf::Font font;
 
 int main() {
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(800, 600), "Mad Genius");
-	sf::Text text, text2, text3, text4, text5, text6, text7, text8;
-	font.loadFromFile("ALGER.ttf");
-	text.setFont(font); text.setColor(sf::Color::Yellow);
-	text2.setFont(font); text2.setColor(sf::Color::Yellow);
-	text2.setPosition(600, 600);
-	text2.setString("Level");
-	bool rodando = true;
-	srand(time(0));
-	int corGenius, corGeniusAux = 0;
-	int AuxInsere = 5;
-	int turno = 1, nivel = 1;
-	int i;
-	bool flag = true, flag2 = true;
+	
+	//declaring the texts
+	sf::Text text, text2;
+	font.loadFromFile("ALGER.ttf"); text.setFont(font); text2.setFont(font);
+	text.setColor(sf::Color::Yellow); text2.setColor(sf::Color::Yellow);
+	
+	//main variables
+	bool rodando = true, flag = true;
+	int  i, corGenius, corGeniusAux = 0, AuxInsere = 5, turno = 1;
 
 	Pilha p1;
 	Fila f1;
@@ -45,6 +41,7 @@ int main() {
 					window->clear(sf::Color::Black);
 					gR->draw();
 					while (i < turno) {
+						srand(time(0));
 						corGenius = rand() % 4 + 1;
 						while (corGenius == corGeniusAux) {
 							corGenius = rand() % 4 + 1;
@@ -103,7 +100,7 @@ int main() {
 							text.setString("Nice! Nivel: ");
 							text.setPosition(0, 0);
 							text2.setString(ss.str());
-							text2.setPosition(250, 0);
+							text2.setPosition(200, 0);
 							window->draw(text);
 							window->draw(text2);
 							window->display();
