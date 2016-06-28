@@ -15,9 +15,8 @@ int main() {
 	sf::RenderWindow* window = new sf::RenderWindow(sf::VideoMode(800, 600), "Mad Genius");
 	sf::Text text, text2, text3, text4, text5, text6, text7, text8;
 	font.loadFromFile("ALGER.ttf");
-	text8.setFont(font); text8.setColor(sf::Color::White); text8.setString("Press Space to Start"); text8.setPosition(230, 100);
-	text.setFont(font);
-	text2.setFont(font);
+	text.setFont(font); text.setColor(sf::Color::Yellow);
+	text2.setFont(font); text2.setColor(sf::Color::Yellow);
 	text2.setPosition(600, 600);
 	text2.setString("Level");
 	bool rodando = true;
